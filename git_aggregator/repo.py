@@ -263,6 +263,7 @@ class Repo(object):
         if logger.getEffectiveLevel() != logging.DEBUG:
             cmd += ('--quiet',)
         cmd += self._fetch_options(merge) + (merge["remote"], merge["ref"])
+        cmd += ('--allow-unrelated-histories',)
         self.log_call(cmd, cwd=self.cwd)
 
     def _get_remotes(self):
