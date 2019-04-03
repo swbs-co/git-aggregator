@@ -1,0 +1,28 @@
+./uec-addons:
+#    defaults:
+#        allow-unrelated-histories:
+    remotes:
+        oae: ssh://git@git.smartway-jo.com:1022/uec/oae.git
+#        uec: ssh://git@git.smartway-jo.com:1022/uec/custom-addons.git
+        accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
+#        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
+#        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
+#        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
+        sales: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/sales.git
+        warehouse: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/warehouse.git
+    merges:
+        - 
+            remote: accounting 
+            ref: "12.0-uec-prod"
+            allow-unrelated-histories: true
+#        - common 12.0-uec-prod
+#        - hr 12.0-uec-prod
+#        - purchase 12.0-uec-prod
+        - sales 12.0-uec-prod
+        - warehouse 12.0-uec-prod
+    target: oae 12.0-uec-prod
+    fetch_all:
+        - all
+#    shell_command_after:
+#        - git push oae 12.0-uec-prod --allow-unrelated-histories
+
