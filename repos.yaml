@@ -172,3 +172,34 @@
     target: oae 11.0-gap-prod
     fetch_all:
         - all
+
+./wiconnect-addons:
+    remotes:
+        oae: ssh://git@git.smartway-jo.com:1022/wiconnect/oae.git
+#        pos: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/pos.git
+        accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
+        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
+        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
+        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
+        project: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/project.git
+#        manufacturing: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/manufacturing.git
+        sales: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/sales.git
+        warehouse: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/warehouse.git
+#        website: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/website.git
+#        marketing: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/marketing.git
+    merges:
+        - oae 11.0-wiconnect-prod
+#        - pos 11.0-wiconnect-prod
+        - accounting 11.0-wiconnect-prod
+        - hr 11.0-wiconnect-prod
+        - purchase 11.0-wiconnect-prod
+        - project 11.0-wiconnect-prod
+#        - manufacturing 11.0-wiconnect-prod
+        - sales 11.0-wiconnect-prod
+        - warehouse 11.0-wiconnect-prod
+        - common 11.0-wiconnect-prod
+#        - website 11.0-wiconnect-prod
+#        - marketing 11.0-wiconnect-prod
+    target: oae 11.0-wiconnect-prod
+    fetch_all:
+        - all
