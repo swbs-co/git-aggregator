@@ -329,6 +329,27 @@
     fetch_all:
         - all
 
+./nextmove-addons-11:
+    remotes:
+        oae: ssh://git@git.smartway-jo.com:1022/nextmove/apps-enh.git
+        accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
+#        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
+#        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
+#        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
+#        sales: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/sales.git
+#        warehouse: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/warehouse.git
+    merges:
+        - accounting 11.0-nextmove-prod
+        - oae 11.0
+#        - hr 11.0-nextmove-prod
+#        - purchase 11.0-nextmove-prod
+#        - sales 11.0-nextmove-prod
+#        - warehouse 11.0-nextmove-prod
+#        - common 11.0-nextmove-prod
+    target: oae 11.0
+    fetch_all:
+        - all
+
 ./kado-addons:
     remotes:
         oae: ssh://git@git.smartway-jo.com:1022/kado/oae.git
