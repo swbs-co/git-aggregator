@@ -1,3 +1,34 @@
+./swbs-addons:
+    remotes:
+        oae: ssh://git@git.smartway-jo.com:1022/swbs/oae.git
+#        pos: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/pos.git
+        accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
+        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
+        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
+#        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
+        project: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/project.git
+#        manufacturing: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/manufacturing.git
+#        sales: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/sales.git
+#        warehouse: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/warehouse.git
+        website: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/website.git
+        marketing: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/marketing.git
+    merges:
+        - oae 11.0
+#        - pos 11.0-swbs-prod-filtered
+        - accounting 11.0-swbs-prod-filtered
+        - common 11.0-swbs-prod-filtered
+        - hr 11.0-swbs-prod-filtered
+#        - purchase 11.0-swbs-prod-filtered
+        - project 11.0-swbs-prod-filtered
+#        - manufacturing 11.0-swbs-prod-filtered
+#        - sales 11.0-swbs-prod-filtered
+#        - warehouse 11.0-swbs-prod-filtered
+        - website 11.0-swbs-prod-filtered
+        - marketing 11.0-swbs-prod-filtered
+    target: oae 11.0
+    fetch_all:
+        - all
+
 ./time-machine-addons:
     remotes:
         oae: ssh://git@git.smartway-jo.com:1022/time-machine/oae.git
@@ -190,7 +221,7 @@
 #        pos: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/pos.git
         accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
         common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
-#        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
+        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
 #        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
 #        project: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/project.git
 #        manufacturing: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/manufacturing.git
@@ -202,7 +233,7 @@
         - oae 11.0
 #        - pos 11.0-ruwwad-prod
         - accounting 11.0-ruwwad-prod
-#        - hr 11.0-ruwwad-prod
+        - hr 11.0-ruwwad-prod
 #        - purchase 11.0-ruwwad-prod
 #        - project 11.0-ruwwad-prod
 #        - manufacturing 11.0-ruwwad-prod
