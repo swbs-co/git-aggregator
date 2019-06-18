@@ -374,7 +374,7 @@
     remotes:
         oae: ssh://git@git.smartway-jo.com:1022/nextmove/apps-enh.git
         accounting: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/accounting.git
-#        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
+        common: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/common.git
 #        hr: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/hr.git
 #        purchase: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/purchase.git
 #        sales: ssh://git@git.smartway-jo.com:1022/odoo-apps-enh/sales.git
@@ -386,7 +386,7 @@
 #        - purchase 12.0-nextmove-prod
 #        - sales 12.0-nextmove-prod
 #        - warehouse 12.0-nextmove-prod
-#        - common 12.0-nextmove-prod
+        - common 12.0-nextmove-prod
     target: oae 12.0
     fetch_all:
         - all
